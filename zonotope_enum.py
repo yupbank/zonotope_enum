@@ -75,4 +75,4 @@ def enum(gs):
     """
     from functools import reduce
     v = [roll(_enum(i)) for i in cluster(gs)]
-    return np.around(reduce(lambda x, y: roll(merge_vertex(x, y)), v), 10)
+    return np.around(reduce(lambda x, y: merge_vertex(x, y), v), 10)
